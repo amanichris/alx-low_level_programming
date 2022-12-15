@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * _isupper -> this is a function to check uppercase alphas
- *@c: an integer parameter
+ * _isupper -> this is a function to check upper case alphas
+ *@c: an integer paramer
  * Return: something but success
  */
 
