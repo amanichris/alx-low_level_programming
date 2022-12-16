@@ -1,10 +1,9 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
- * prints_numbers - functions that print all numbers from 0 to 9
- *
- * Return: returns void
+ * prints_numbers - functions that print all numbers from 0 to 9.
+ * Return: void
  */
 
 void print_numbers(void)
@@ -15,5 +14,5 @@ void print_numbers(void)
 	{
 		putchar(n);
 	}
-	putchar('\n');
+		putchar(10);
 }
