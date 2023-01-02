@@ -1,8 +1,8 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strspn - Gets the lengths of a prefix substring.
- * @s: The string to be searched
+ * @s: The string to be searched.
  * @accept: The prefix to be measured.
  *
  * Return: The number of bytes which consist only
