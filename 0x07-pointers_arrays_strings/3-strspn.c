@@ -11,19 +11,19 @@ include "main.h"
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int bytes = 0;
-	int a;
+	int index;
 
 	while (*s)
 	{
-		for (a = 0; accept[a]; a++)
+		for (index = 0; accept[index]; index++)
 		{
-			if (*s == accept[a])
+			if (*s == accept[index])
 			{
 				bytes++;
 				break;
 			}
 
-			else if (accept[a + 1] == '\0')
+			else if (accept[index + 1] == '\0')
 				return (bytes);
 		}
 			s++;
