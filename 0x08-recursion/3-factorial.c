@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string>
+
 /**
  * factorial - returns the factorial of a given number.
  * @n: The number to find the factorial of
