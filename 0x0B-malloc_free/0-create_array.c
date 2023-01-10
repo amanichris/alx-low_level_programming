@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * create_array - arrays to prints a string
@@ -34,6 +36,6 @@ buffer = (char *) malloc(size * sizeof(c));
 		position++;
 	}
 
-	return (array);
+	return (buffer);
 	}
 }
