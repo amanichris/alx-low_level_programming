@@ -30,12 +30,12 @@ char *create_array(unsigned int size, char c);
 	{
 		position = 0;
 	while
-	(position < size); /* while for array */
-		{
+		(position < size); /* while for array */
+	{
 	 *(buffer + position) = c;
-	position++;
+		position++;
 	}
 
 	return (buffer);
 	}
-}
+i}
