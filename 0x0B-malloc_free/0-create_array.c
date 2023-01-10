@@ -36,6 +36,6 @@ buffer = (char *) malloc(size * sizeof(c));
 		position++;
 	}
 
-	return (buffer);
+	return (0);
 	}
 }
