@@ -10,37 +10,33 @@
  */
 int main(int argc, char *argv[])
 {
-	int arg1, arg2, result;
-	char o;
-	int (*func)(int, int);
+	int bytes, i;
+	char *arr;
 
-	if (argc != 4)
+	if (argc != 2)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(1);
 	}
-	arg1 = atoi(argv[1]);
-	arg2 = atoi(argv[3]);
 
-	func = get_up_func(argv[2]);
+	bytes = atoi(argv[1]);
 
-	if (!func)
+	if (bytes < 0)
 	{
 		printf("Error\n");
-		exit(99);
+		exit(2);
 	}
 
-	o = *argv[2];
+	arr = (char *)main;
 
-	if ((o == '/' || o == '%') && arg2 == 0)
+	for (i = 0; i < bytes; i++)
 	{
-		printf("Error\n");
-		exit(100);
+		if (i == bytes - 1)
+		{
+			printf("%02hhx\n", arr[i]);
+			break;
+		}
+		printf("%02hhx ", arr[i]);
 	}
-
-	result = func(arg1, arg2);
-
-	printf("%d\n", result);
-
 	return (0);
 }
