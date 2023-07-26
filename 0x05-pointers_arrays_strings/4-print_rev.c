@@ -3,13 +3,24 @@
 /**
  * print_rev -> printing a string in reverse
  * @s: the string to be printed in rev
- * Return: void
+ * Return: Always 0
  */
 void print_rev(char *s)
 {
-	while (*str != '\0')
+	int longi = 0;
+	int o;
+
+	while (*s != '\0')
 	{
-		_putchar(*str++);
+		longi++;
+		s++;
 	}
-		_putchar('\n');
+	s--;
+	for (o = longi; o > 0; o--)
+	{
+		_putchar(*s);
+		s--;
+	}
+
+	_putchar('\n');
 }
