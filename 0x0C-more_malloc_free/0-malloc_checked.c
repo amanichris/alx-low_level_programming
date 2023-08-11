@@ -2,13 +2,15 @@
 #include "main.h"
 
 /**
- * malloc_checked - array for prints a string
+ * malloc_checked -> cause normal process termination with a 
+ * status value of 98
  * @b: number of memory
+ *
  * Return: void
  */
 void *malloc_checked(unsigned int b)
 {
-	void *ptr
+	void *ptr;
 
 	ptr = malloc(b);
 
