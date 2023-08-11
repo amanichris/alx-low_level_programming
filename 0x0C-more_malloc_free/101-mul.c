@@ -1,8 +1,8 @@
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
 
-#include ERR_MSG "Error"
+#define ERR_MSG "Error"
 
 /**
  * is_digit - checks if a string contains a non-digit char
