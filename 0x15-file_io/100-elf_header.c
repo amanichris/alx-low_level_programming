@@ -7,7 +7,6 @@
 #include <fcntl.h>
 #include <stdint.h>
 
-Elf64_Ehdr hdr;
 
 void check_elf(unsigned char *e_ident);
 void print_magic(unsigned char *e_ident);
